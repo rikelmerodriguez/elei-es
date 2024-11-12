@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eleição do Grêmio Estudantil</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Eleição do Grêmio Estudantil EFABIP</h1>
+    <form id="votingForm">
+      <label for="name">Nome do Aluno:</label>
+      <input type="text" id="name" required>
+      
+      <label for="class">Turma:</label>
+      <input type="text" id="class" required>
+      
+      <label>Escolha a chapa:</label>
+      <div class="options">
+        <label><input type="radio" name="chapa" value="Chapa 1" required> Chapa 1</label>
+        <label><input type="radio" name="chapa" value="Chapa 2"> Chapa 2</label>
+        <label><input type="radio" name="chapa" value="Chapa 3"> Chapa 3</label>
+        <label><input type="radio" name="chapa" value="Chapa 4"> Chapa 4</label>
+      </div>
+      
+      <button type="submit">Votar</button>
+    </form>
+    
+    <h2>Resultado da Votação</h2>
+    <ul id="result">
+      <li>Chapa 1: <span id="chapa1">0</span> votos</li>
+      <li>Chapa 2: <span id="chapa2">0</span> votos</li>
+      <li>Chapa 3: <span id="chapa3">0</span> votos</li>
+      <li>Chapa 4: <span id="chapa4">0</span> votos</li>
+    </ul>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
